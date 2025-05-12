@@ -1,0 +1,4 @@
+redis:
+  host: ai-fire-tranship-service
+  port: 6379
+
