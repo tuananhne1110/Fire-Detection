@@ -1,0 +1,12 @@
+numpy
+opencv_python
+PyYAML==6.0.1
+redis==5.0.1
+simplejpeg
+gunicorn
+python-dotenv==1.0.1
+simplejpeg
+ultralytics
+torch
+boxmot
+onnxruntime

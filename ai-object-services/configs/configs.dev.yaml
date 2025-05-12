@@ -1,0 +1,28 @@
+common:
+  redis:
+    host: 'ai-fire-tranship-service'
+    port: 6379
+    jpeg_quality: 95 
+    colorspace: 'BGR'
+
+  camera:
+    push_fps: 10
+
+model:
+  detection:
+    yolov8:
+      confidence_threshold: 0.2
+      iou_threshold: 0.7
+      fire:
+        iou: 0.7
+        confidence: 0.2
+        model_path: 
+          pt: 'assets/models/detection/pt/fire.pt'
+          onnx: 'assets/models/detection/onnx/fire.onnx'
+
+
+cameras:
+  # - id: cam_1
+  #   url: /home/akacamai/personals/anhnvt12/akacamai/fire_detection/data/parking/car_parking_03.mp4
+  - id: cam_2
+    url: assets/video/car_parking_03.mp4
