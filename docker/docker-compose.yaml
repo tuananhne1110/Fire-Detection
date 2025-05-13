@@ -8,7 +8,7 @@ services:
     networks:
       - fire
     volumes:
-      - /home/akacamai/personals/anhnvt12/akacamai/fire_detection/pipeline/fire/ai-business-service:/app
+      - /ai-business-service:/app
     deploy:
       resources:
         reservations:
@@ -25,9 +25,9 @@ services:
     networks:
       - fire
     volumes:
-      - /home/akacamai/personals/anhnvt12/akacamai/fire_detection/pipeline/fire/ai-objects-service:/app
-      - /home/akacamai/personals/anhnvt12/akacamai/fire_detection:/fire_detection
-      - /home/akacamai/personals/anhnvt12/akacamai/fire_detection/data/parking:/app/assets/video
+      - /ai-objects-service:/app
+      - /fire_detection:/fire_detection
+      - /data/parking:/app/assets/video
     deploy:
       resources:
         reservations:
@@ -47,7 +47,7 @@ services:
     networks:
       - fire
     volumes:
-      - /home/akacamai/personals/anhnvt12/akacamai/fire_detection/pipeline/fire/ai-visualize-service:/app
+      - /ai-visualize-service:/app
     ports:
       - "6969:6969"
     # depends_on:
