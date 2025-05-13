@@ -1,0 +1,29 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+rule_files:
+  - "alert_rules.yml"
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'ai-object-service'
+    static_configs:
+      - targets: ['ai-object-service:8000']
+
+  - job_name: 'ai-business-service'
+    static_configs:
+      - targets: ['ai-business-service:8000']
+
+  - job_name: 'ai-visualize-service'
+    static_configs:
+      - targets: ['ai-visualize-service:8000'] 

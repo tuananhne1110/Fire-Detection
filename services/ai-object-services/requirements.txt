@@ -1,0 +1,14 @@
+numpy==1.24.3
+opencv-python==4.8.0.76
+PyYAML==6.0.1
+redis==4.6.0
+Flask==2.3.3
+simplejpeg
+gunicorn
+python-dotenv==1.0.0
+simplejpeg
+ultralytics
+torch
+boxmot
+onnxruntime
+prometheus-client==0.17.1
