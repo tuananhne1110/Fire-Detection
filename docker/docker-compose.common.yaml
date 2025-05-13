@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  ai-fire-tranship-service:
+    container_name: ai-fire-tranship-service
+    image: redis
+    restart: always
+    ports:
+      - 63790:6379
+    networks:
+      - qvision
+networks:
+  qvision:
+    name: qvision
+    external: True

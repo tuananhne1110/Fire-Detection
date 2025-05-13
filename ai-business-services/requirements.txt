@@ -1,0 +1,8 @@
+numpy
+PyYAML==6.0.1
+redis==5.0.1
+simplejpeg
+python-dotenv
+requests
+Flask==3.0.0
+onnxruntime

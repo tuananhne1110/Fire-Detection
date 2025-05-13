@@ -1,0 +1,24 @@
+common:
+  camera:
+    read_fps: 30
+    push_fps: 15
+    width: 640
+    height: 360
+
+  redis:
+    host: 'ai-fire-tranship-service'
+    port: 6379
+    jpeg_quality: 95 
+    colorspace: 'BGR'
+  
+  stream:
+    target_fps: 12
+
+ 
+database: 
+  db_path: 'assets/db/loop_db.db'
+
+search_engine: 
+  dim_feature: 512
+  match_thresh: 0.82
+
